@@ -10,7 +10,7 @@ from fpdf import FPDF # Import FPDF for PDF generation
 
 # --- Configuration ---
 WHISPER_MODEL_NAME = "base"
-SUMMARIZATION_MODEL_NAME = "t5-small"
+SUMMARIZATION_MODEL_NAME = "t5-base"
 
 st.set_page_config(layout="centered", page_title="Audio Processor")
 st.title("🗣️ Audio to Transcript & Summary")
@@ -175,7 +175,7 @@ if st.button("Process Audio", use_container_width=True):
                 st.session_state.transcript_text = transcript # Store in session state
                 st.success("Transcription Complete!")
                 st.subheader("📝 Transcript:")
-                st.code(transcript)
+                st.write(transcript)
 
                 st.download_button(
                     label="📥 Download Transcript",
