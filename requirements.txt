@@ -3,4 +3,4 @@ streamlit-mic-recorder
 pydub
 torch
 transformers
-openai-whisper
+git+https://github.com/openai/whisper.git
