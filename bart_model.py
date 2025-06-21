@@ -9,7 +9,7 @@ import tempfile
 
 # --- Configuration ---
 WHISPER_MODEL_NAME = "base"
-SUMMARIZATION_MODEL_NAME = "facebook/bart-large-cnn"  # Better summarizer than t5-small
+SUMMARIZATION_MODEL_NAME = "facebook/bart-large-cnn"  
 
 st.set_page_config(layout="centered", page_title="Audio Processor")
 st.title("🗣️ Audio to Transcript & Summary")
@@ -160,5 +160,5 @@ if "summary" in st.session_state:
     )
 
 st.markdown("---")
-st.info("Built with ❤️ using Whisper, Hugging Face Transformers, Streamlit, and PyDub.")
-st.caption(f"Whisper Model: {WHISPER_MODEL_NAME.capitalize()}, Summarization Model: {SUMMARIZATION_MODEL_NAME}")
+# st.info("Built with ❤️ using Whisper, Hugging Face Transformers, Streamlit, and PyDub.")
+# st.caption(f"Whisper Model: {WHISPER_MODEL_NAME.capitalize()}, Summarization Model: {SUMMARIZATION_MODEL_NAME}")
