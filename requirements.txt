@@ -1,0 +1,6 @@
+streamlit
+streamlit-mic-recorder
+pydub
+torch
+transformers
+openai-whisper
